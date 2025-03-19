@@ -1,4 +1,4 @@
-# Vorlesungsplan Alexa Skill
+# Vorlesungsplan Alexa Skill / Lecture-Schedule
 
 ## Overview
 
@@ -28,13 +28,14 @@ To run this project, you will need:
 - **AWS Account**: To deploy the backend using AWS Lambda.
 - **Alexa Developer Account**: To create and manage the Alexa skill.
 - **Dependencies**: Install the required Python packages using:
+
   ```bash
   pip install -r requirements.txt
   ```
 
 ## Configuration
 
-Before using the project, you need to configure the timetable link in the scripts. Locate the relevant section in the Python files (e.g., `Timetable.py`) and replace the placeholder or default link with the actual URL to your timetable. Because the Website where Timetable.py is scraping its Informations from can have many different Layouts, you may need to adjust its Filter, to produce usefull output.
+Before using the project, you need to configure the timetable link in the scripts. Locate the relevant section in the Python files (e.g., `Timetable.py`) and replace the placeholder or default link with the actual URL to your timetable. Because the Website where `Timetable.py` is scraping its informations from can have many different Layouts, you may need to adjust its Filter, to produce usefull output.
 
 Additionally, the `skill.json` file, which typically contains the Alexa skill configuration, has been removed from this repository to protect endpoint privacy. You will need to create or configure the skill manually in the Alexa Developer Console.
 
@@ -46,6 +47,8 @@ The `Timetable.py` file is a core component of this project. It contains the log
 - Supporting queries like "next lecture" or "lectures for a specific day."
 
 This file serves as the data layer for the Alexa skill, ensuring accurate and efficient responses to user queries.
+
+To just run `Timetable.py` you dont need all of the requirements from `requirements.txt`, you will see what packets need to be installed in your IDE once you open the file.
 
 ## Disclaimer
 
