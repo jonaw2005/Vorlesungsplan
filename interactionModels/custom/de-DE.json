@@ -1,0 +1,56 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "TomorrowIntent",
+          "samples": [
+            "wann beginnt schule morgen",
+            "wann habe ich morgen vorlesung",
+            "wann beginnt die vorlesung morgen",
+            "wann habe ich morgen unterricht",
+            "wann fängt die vorlesung morgen an",
+            "unterrichtsbeginn",
+            "vorlesungsbeginn",
+            "vorlesungsplan"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "Tag",
+              "type": "AMAZON.DayOfWeek"
+            }
+          ],
+          "name": "DayIntent",
+          "samples": [
+            "wann am {Tag} die vorlesung anfängt",
+            "wann am {Tag} der unterricht beginnt",
+            "wann beginnt am {Tag} der Unterricht",
+            "wann beginnt die Vorlesung am {Tag}",
+            "wann habe ich am {Tag} Vorlesung"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "vorlesungs plan"
+    }
+  }
+}
